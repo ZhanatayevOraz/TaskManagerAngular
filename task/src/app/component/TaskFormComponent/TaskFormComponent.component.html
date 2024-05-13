@@ -1,0 +1,41 @@
+
+<div class="wrap">
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="title">
+      <p>Задача</p>
+      <div class="title-tag">
+        <label class="checkbox-container-important " id="container-important ">
+          <input  id="importance" type="checkbox" id="custom-checkbox-important " formControlName="importance" >
+          <div class="checkbox-icon-important "></div> 
+        </label>
+        <button class="exit-btn" (click)="back()"></button>
+      </div>
+    </div>
+    <div class="second-wrap">
+      <label for="title">Название:</label>
+      <input id="title" type="text" formControlName="title" placeholder="Название задачи">
+
+      <div class="importance-wrap">
+        <input id="importance" type="checkbox" formControlName="importance">
+        <label for="importance">Важная Задача:</label>
+      </div>
+      
+
+      <label for="dateOfCompletion">Дата и Время окончание:</label>
+      <input id="dateOfCompletion" type="date" placeholder="Дата" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" formControlName="dateOfCompletion"  >
+
+      <label for="description">Описание задачи:</label>
+      <textarea name="q" id="description" cols="30" rows="10" formControlName="description" placeholder="Описание задачи"></textarea>
+
+      <label for="description">Тэги:</label>
+      <div formGroupName="tags" class="tags-container">
+        <label><input type="checkbox" formControlName="education"> Образование</label>
+        <label><input type="checkbox" formControlName="health"> Здоровье</label>
+        <label><input type="checkbox" formControlName="quickly"> Срочно</label>
+        <label><input type="checkbox" formControlName="productivity"> Продуктивность</label>
+      </div>
+
+      <button class="btn" type="submit" [disabled]="taskForm.invalid">Добавить</button>
+  </div>
+  </form>
+</div>

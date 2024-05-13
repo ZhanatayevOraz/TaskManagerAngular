@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background: rgba(19, 25, 42, 1);
+    align-items: center;
+}
+.btn{
+    background: rgba(115, 103, 240, 1);
+    width: 177px;
+    height: 38px;
+    padding: 10px 23px 11px 23px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 0;
+
+}
+.border{
+    border-top: 0;
+    border-left: 1px;
+    border-bottom: 1px;
+    border-right: 0;
+    border-style: solid;
+    border-color: rgba(49, 57, 76, 1);
+  }
+
+.delete-btn{
+    background: url('./assets/icon/delete.svg') 0px  center no-repeat;
+    border: 0;
+    width: 20px;
+    height: 20px;
+}
+.exit-btn{
+    background: url('./assets/icon/exit-main.svg') 0px  center no-repeat;
+    border: 0;
+    width: 20px;
+    height: 20px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    display: none; 
+  }
+  
+  .checkbox-icon {
+    width: 24px; 
+    height: 24px;
+    margin: 0px 20px;
+    background-image: url('./assets/icon/Checkbox-default.svg');
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked + .checkbox-icon {
+    width: 24px; 
+    height: 24px;
+    background-image: url('./assets/icon/Checkbox-choisen.svg');
+    background-size: cover;
+  }
+  
+  
+  /* important */
+.checkbox-container-important {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-container-important input[type="checkbox"] {
+    display: none; 
+  }
+  
+  .checkbox-icon-important {
+    width: 24px; 
+    height: 24px;
+    margin: 0px 20px;
+    background-image: url('./assets/icon/important-main.svg');
+    background-size: cover;
+    cursor: pointer;
+  }
+  .checkbox-container-important input[type="checkbox"]:checked + .checkbox-icon-important {
+    width: 24px; 
+    height: 24px;
+    background-image: url('./assets/icon/important-main.svg');
+    background-size: cover;
+  }
+ 
+  

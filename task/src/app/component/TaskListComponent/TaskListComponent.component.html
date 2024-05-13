@@ -1,0 +1,38 @@
+
+
+
+
+<div class="wrap">
+    <div class="parametr-list">
+      <button class="btn" (click)="openModal()">Новая Задача</button>
+      <div *ngFor="let tag of ['completed', 'education', 'health', 'quickly','productivity']">
+        <label class="checkbox-container" id="container">
+          <input type="checkbox" id="custom-checkbox" (change)="updateFilter(tag)" [checked]="filterTags[tag]">
+          <div class="checkbox-icon"></div> {{ tag }}
+        </label>
+        
+      </div>
+      
+    </div>
+    <div class="task-list">
+      
+      <div>
+        <input class="search-bar border"type="text" [(ngModel)]="searchTerm" placeholder="Найти" (input)="filterTasks()">
+      </div>
+      <div cdkDropList  (cdkDropListDropped)="onDrop($event)">
+        
+        <app-TaskItemComponent *ngFor="let task of filteredTasks; let i = index" 
+                          [detail]="task" 
+                          [index]="i" 
+                          (onDeleteTask)="deleteTask($event)"
+                          cdkDrag >  
+      </app-TaskItemComponent>
+      </div>
+    </div>
+</div>
+
+<div class="tags-item" *ngIf="modalOpen">
+  <p>
+    <app-TaskFormComponent [modalOpen]="modalOpen" (closeModal)="modalOpen = false"></app-TaskFormComponent>
+  </p>
+</div>

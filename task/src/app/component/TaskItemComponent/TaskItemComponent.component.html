@@ -1,0 +1,24 @@
+<div class="cart-wrap border">
+    <div class="title-wrap">
+        <label class="checkbox-container">
+            <input type="checkbox" id="custom-checkbox" [(ngModel)]="detail.tags.completed" (change)="updateCompleted()" >
+            <div class="checkbox-icon"></div> 
+          </label>
+        <h5 class="card-title main-text">{{detail.title}}</h5>
+    </div>
+    <!-- <p class="card-text">{{detail.description}}</p> -->
+    <div class="second-wrap "> 
+        <div class="tags ">
+        <div class="tags-item badge health" *ngIf="detail.tags.health"><p>Здоровье</p></div>
+        <div class="tags-item badge education" *ngIf="detail.tags.education"><p>Обучение</p></div>
+        <div class="tags-item badge quickly" *ngIf="detail.tags.quickly"><p>Срочно</p></div>
+        <div class="tags-item badge productivity" *ngIf="detail.tags.productivity"><p>Продуктивность</p></div>
+        <p class="card-text main-text mg-l-20">{{detail.dateOfCompletion}}</p>
+        <button class="delete-btn mg-l-20" (click)="triggerDeleteTask()"></button></div>
+        <button class="pere-btn mg-l-20" cdkDragHandle></button>
+    </div>
+    
+    
+    
+</div>
+  

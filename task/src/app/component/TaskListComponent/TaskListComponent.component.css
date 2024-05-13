@@ -1,0 +1,23 @@
+.wrap{
+    background: rgba(40, 48, 70, 1);
+    border: 1px solid rgba(59, 66, 83, 1);
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    width: 50%;
+    border-radius: 8px;
+} 
+.parametr-list{
+    width: 190px;
+    color: rgba(208, 210, 214, 1);
+    margin: 20px 0px 0px 22px;
+
+}
+.search-bar{
+    width: max-content;
+    background-color: inherit;
+    /* border:0px; */
+    padding-block: 0px;
+    padding-inline: 0px;
+}

@@ -1,0 +1,84 @@
+.cart-wrap{
+    max-width: 1052px;
+    max-height: 57px;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.tags{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.title-wrap{
+    display: flex;
+    align-items: center;
+}
+.second-wrap{
+    display: flex;
+    align-items: center;
+}
+.tags-item{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.productivity{
+    gap: 3px;
+    border-radius: 17px 0px 0px 0px;
+    background: rgba(39, 114, 8, 0.12);
+    color: rgba(115, 103, 240, 1);
+}
+.education{
+    color: rgba(40, 199, 111, 1);
+    
+    gap: 3px;
+    background-color: #28C76F1F;
+}
+.health{
+    color: rgba(255, 159, 67, 1);
+    background: rgba(255, 159, 67, 0.12);
+}
+.quickly{
+    color:  rgba(234, 84, 85, 1);
+    background: rgba(234, 84, 85, 0.12);
+}
+.badge{
+border-radius: 17px;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+text-align: center;
+padding: 1px 9px 1px 9px;
+height:20px;
+}
+.cart-title{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+color:  rgba(180, 183, 189, 1);
+}
+.pere-btn{
+    background: url('../../../assets/icon/pere.svg') 0px  center no-repeat;
+    border: 0;
+    width: 20px;
+    height: 20px;
+}
+.main-text{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color:  rgba(180, 183, 189, 1);
+
+}
+.mg-l-20{
+    margin-left: 20px;
+}
+
